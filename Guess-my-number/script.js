@@ -19,6 +19,8 @@ document.getElementsByClassName('check')[0].addEventListener('click', () => {
       } else {
         document.getElementsByClassName('message')[0].textContent = 'You won';
         document.getElementsByClassName('number')[0].textContent = random;
+        document.getElementsByClassName('border')[0].style.borderBottom =
+          '60px solid red';
 
         document.querySelector('body').style.backgroundColor = '#60b347';
 
@@ -34,7 +36,8 @@ document.getElementsByClassName('check')[0].addEventListener('click', () => {
 });
 document.getElementsByClassName('again')[0].addEventListener('click', () => {
   score = 20;
-
+  document.getElementsByClassName('border')[0].style.borderBottom =
+    '7px solid #eee';
   document.querySelector('body').style.backgroundColor = '#222';
   document.getElementsByClassName('message')[0].textContent =
     'Start guessing...';
