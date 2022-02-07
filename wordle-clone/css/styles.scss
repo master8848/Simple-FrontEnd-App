@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  background-color: #023;
+}
+.logo {
+  width: 30px;
+  cursor: pointer;
+}
+.container {
+  max-width: 500px;
+  width: 100%;
+  margin: 10px auto 0px auto;
+  border: 1px solid red;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #000;
+  align-items: center;
+  color: #000;
+  font-size: 28px;
+  cursor: default;
+}
+.main {
+  max-width: 430px;
+  // display: flex;
+  // justify-content: space-between;
+  margin: 10px auto 40px auto;
+  width: 90%;
+}
+.space {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px dashed #787878;
+  margin: 3px;
+}
+
+@for $i from 1 through 6 {
+  .row-#{$i} {
+    display: flex;
+    // justify-content: space-between;
+    justify-content: center;
+    margin-bottom: 3px;
+  }
+}
+@for $i from 1 through 3 {
+  .r-#{$i} {
+    display: flex;
+    // justify-content: space-between;
+  }
+  .r-#{$i} div {
+    border: 1px solid red;
+    padding: 12px;
+  }
+}
+// .row-1 {
+//   display: flex;
+//   justify-content: space-between;
+// }
+// .r-1 {
+//   display: flex;
+//   justify-content: space-between;
+// }
+// .row-2 {
+//   display: flex;
+//   justify-content: space-between;
+// }
+// .r-2 {
+//   display: flex;
+//   justify-content: space-between;
+// }
+// .row-3 {
+//   display: flex;
+//   justify-content: space-between;
+// }
+// .r-3 {
+//   display: flex;
+//   justify-content: space-between;
+// }
+// .row-4 {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// .row-5 {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// .row-6 {
+//   display: flex;
+//   justify-content: space-between;
+// }
