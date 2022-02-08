@@ -13,14 +13,14 @@ html {
   max-width: 500px;
   width: 100%;
   margin: 10px auto 0px auto;
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 .header {
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid #000;
   align-items: center;
-  color: #000;
+  color: #dfe;
   font-size: 28px;
   cursor: default;
 }
@@ -34,9 +34,14 @@ html {
 .space {
   width: 40px;
   height: 40px;
-  background-color: #fff;
-  border: 1px dashed #787878;
+  background-color: lighten($color: #023, $amount: 20%);
+  border: 1px dotted darken($color: #023, $amount: 40%);
+  font-size: xx-large;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
   margin: 3px;
+  text-align: center;
 }
 
 @for $i from 1 through 6 {
@@ -53,9 +58,30 @@ html {
     // justify-content: space-between;
   }
   .r-#{$i} div {
-    border: 1px solid red;
+    // border: 1px solid red;
+    background-color: darken($color: #023, $amount: 60%);
+    border-radius: 3px;
+    color: #dfe;
+    // justify-content: space-between;
+    cursor: pointer;
+    margin: 3px;
     padding: 12px;
   }
+}
+.r-1 {
+  width: fit-content;
+  margin: auto;
+  // border: 2px solid red;
+}
+.r-2 {
+  width: fit-content;
+  margin: auto;
+  // border: 2px solid red;
+}
+.r-3 {
+  width: fit-content;
+
+  margin: auto;
 }
 // .row-1 {
 //   display: flex;
